@@ -1,5 +1,5 @@
 *{
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: "Meiryo", "Yu Gothic", "MS Gothic", sans-serif;
     margin: 0%;
     padding: 0%;
     box-sizing: border-box;
@@ -34,13 +34,41 @@ header > h1{
     display: flex;
     flex-direction: column;
     align-items: center;
-    height: 400px;
-    width: 400px;
+    justify-content: space-around;
+    min-height: 300px;
+    min-width: 300px;
     padding: 5px;
     border: 2px solid white;
     border-radius: 15px;
-    box-shadow: 5px 5px 5px gray;
+    box-shadow: 5px 5px 10px #9c325c;
 }
 
-footer{
+h2{
+    font-size: 30px;
+}
+
+.card > a{
+    height: 150px;
+    width: 150px;
+}
+
+.card > a > img{
+    height: 100%;
+    width: 100%;
+    border: 2px solid #F4E1E6;
+    border-radius: 15px;
+}
+
+.p{
+    display: none;
+}
+
+.button{
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 2px 2px 5px #454545;
+    font-size: larger;
+    color: white;
+    background-color: #9c325c;
 }
