@@ -16,8 +16,23 @@ header{
     background-color: #9c325c;
 }
 
+@media (max-width: 500px) {
+    h1 {
+        font-size: 1.5rem;
+    }
+}
+
 header > h1{
     color: white;
+}
+
+header > a{
+    height: 100%;
+    min-height: 45px;
+}
+
+header > a > img{
+    height: 100%;
 }
 
 .container{
@@ -36,11 +51,17 @@ header > h1{
     align-items: center;
     justify-content: space-around;
     min-height: 300px;
-    min-width: 300px;
+    width: 250px;
     padding: 5px;
     border: 2px solid white;
     border-radius: 15px;
     box-shadow: 5px 5px 10px #9c325c;
+    transition: 0.2s;
+}
+
+.card:hover{
+    min-height: 350px;
+    width: 300px;
 }
 
 h2{
@@ -50,6 +71,12 @@ h2{
 .card > a{
     height: 150px;
     width: 150px;
+    transition: 0.2s;
+}
+
+.card > a:hover{
+    height: 200px;
+    width: 200px;
 }
 
 .card > a > img{
@@ -71,4 +98,5 @@ h2{
     font-size: larger;
     color: white;
     background-color: #9c325c;
+    transition: 0.2s;
 }
