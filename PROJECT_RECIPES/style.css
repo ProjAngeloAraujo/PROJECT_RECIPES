@@ -1,5 +1,5 @@
 *{
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: "Meiryo", "Yu Gothic", "MS Gothic", sans-serif;
     margin: 0%;
     padding: 0%;
     box-sizing: border-box;
@@ -16,8 +16,23 @@ header{
     background-color: #9c325c;
 }
 
+@media (max-width: 500px) {
+    h1 {
+        font-size: 1.5rem;
+    }
+}
+
 header > h1{
     color: white;
+}
+
+header > a{
+    height: 100%;
+    min-height: 45px;
+}
+
+header > a > img{
+    height: 100%;
 }
 
 .container{
@@ -34,13 +49,54 @@ header > h1{
     display: flex;
     flex-direction: column;
     align-items: center;
-    height: 400px;
-    width: 400px;
+    justify-content: space-around;
+    height: 300px;
+    width: 250px;
     padding: 5px;
     border: 2px solid white;
     border-radius: 15px;
-    box-shadow: 5px 5px 5px gray;
+    box-shadow: 5px 5px 10px #9c325c;
+    transition: 0.5s;
 }
 
-footer{
+.card:hover{
+    height: auto;
+    width: 300px;
+}
+
+h2{
+    font-size: 30px;
+}
+
+.card > a{
+    height: 150px;
+    width: 150px;
+    transition: 0.2s;
+}
+
+.card > a:hover{
+    height: 200px;
+    width: 200px;
+}
+
+.card > a > img{
+    height: 100%;
+    width: 100%;
+    border: 2px solid #F4E1E6;
+    border-radius: 15px;
+}
+
+.p{
+    display: none;
+}
+
+.button{
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 2px 2px 5px #454545;
+    font-size: larger;
+    color: white;
+    background-color: #9c325c;
+    transition: 0.2s;
 }
